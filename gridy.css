@@ -16,25 +16,25 @@ h2 {
     background-color:  rgb(17,17,17);
     border: 3px solid black;
     border-radius: 30px;
-    /*propiedad de grid al container más grande */
+    /*grid goes to container */
     display: grid;
 
-    /* unidad de fraccion*/
+    /* usar frs?*/
     /*grid-template-columns: 1fr 2fr;*/
 
     /*usar repeat*/
     grid-template-rows: repeat(4, auto);
 
-    /*rows automaticas de cierta medida*/
+    /*use auto rows?*/
     /*grid-auto-rows: 250px;*/
 
     /* hacerla responsive con minimos*/
     grid-template-columns: minmax(100px, 40%) 1fr 1fr; 
 
-    /*gap*/
+    /*keep proportions*/
     box-sizing: border-box;
 
-    /* HACERLO RESPONSIVE*/
+    /*otra forma*/
     /*
     grid-template-columns: repeat( 
         auto-fill,
