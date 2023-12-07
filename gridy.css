@@ -1,0 +1,125 @@
+
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    color: white;
+
+}
+
+.container {
+    background-color:  rgb(17,17,17);
+    border: 3px solid black;
+    border-radius: 30px;
+    /*propiedad de grid al container más grande */
+    display: grid;
+
+    /* unidad de fraccion*/
+    /*grid-template-columns: 1fr 2fr;*/
+
+    /*usar repeat*/
+    grid-template-rows: repeat(4, auto);
+
+    /*rows automaticas de cierta medida*/
+    /*grid-auto-rows: 250px;*/
+
+    /* hacerla responsive con minimos*/
+    grid-template-columns: minmax(100px, 40%) 1fr 1fr; 
+
+    /*gap*/
+    box-sizing: border-box;
+
+    /* HACERLO RESPONSIVE*/
+    /*
+    grid-template-columns: repeat( 
+        auto-fill,
+        minmax(400px, 2fr)
+    );
+       
+    */
+ 
+}
+
+.container div {
+    background-color: rgb(238, 39, 55);
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.container #about-us-image > img{
+    /*background-image: url("/resources/fotos/84D28EE2-A2C8-49AF-B623-3DC81CD4B154_1_105_c.jpeg");*/
+    /*background-size: cover;*/
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /*images mantain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+
+.container #about-us-info {
+    background-color: rgb(238, 39, 55);
+    /* column span */
+    grid-column-start: span 2;
+    text-align: center;
+    padding: 10px 20px;
+    
+    
+}
+.container #about-first-info {
+    background-color: rgb(238, 39, 55);
+    grid-column-start: span 2;
+    text-align: center;
+    padding: 10px 20px;
+    
+
+
+}
+.container #about-first-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.container #mission-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.container #mission-info {
+    background-color: rgb(238, 39, 55);
+    /* column span */
+    grid-column-start: span 2;
+    text-align: center;
+    padding: 10px 20px;
+    
+}
+
+.container #vission-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container #vission-info {
+    background-color: rgb(238, 39, 55);
+    /* column span */
+    grid-column-start: span 2;
+    text-align: center;
+    padding: 10px 20px;
+    
+}
+
